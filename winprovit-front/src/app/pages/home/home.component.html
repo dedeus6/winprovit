@@ -1,0 +1,14 @@
+<div class="home-page-container">
+    <span class="raised-spam">Choose a number</span>
+    <form class="form-container" [formGroup]="alticciForm" (ngSubmit)="getSequenceNumber()">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Number of sequence</mat-label>
+            <input matInput type="number" formControlName="sequenceNumber">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!alticciForm.valid">Get sequence number</button>
+    </form>
+    <div class="result-container">
+        <span class="raised-spam">The number of sequence is:</span>
+        <span class="raised-spam">{{sequenceNumber}}</span>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: winprovit-challenge
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+springdoc:
+  swagger-ui:
+    path: /
