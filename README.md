@@ -30,6 +30,9 @@
 
 * Run frontend project
 1. Navigate to the /winprovit-front folder
+```
+<cd winprovit-front>
+```
 2. Install dependencies
 ```
 <npm i> or <npm install>
